@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f0f4f8;
+  color: #333;
+}
+header {
+  background-color: #00796b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: 1.2px;
+}
+nav {
+  margin-top: 10px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #80cbc4;
+}
+.hero {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-text {
+  flex: 1 1 500px;
+  padding-right: 20px;
+}
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #004d40;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+.hero-text button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.hero-text button:hover {
+  background-color: #004d40;
+}
+.hero-image {
+  flex: 1 1 450px;
+  text-align: center;
+}
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.job-section {
+  max-width: 1100px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+}
+.job-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #00796b;
+  margin-bottom: 30px;
+}
+.job-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 25px;
+}
+.job-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+.job-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.job-card img {
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.job-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #004d40;
+  margin-bottom: 8px;
+}
+.company {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 6px;
+}
+.location {
+  color: #00796b;
+  font-weight: 600;
+}
+footer {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  letter-spacing: 0.7px;
+}
+/* Responsive */
+@media(max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-text {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+}
